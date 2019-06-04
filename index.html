@@ -1,0 +1,332 @@
+<!-- 
+Author:Start templates 
+Design By : Start Templates Developement
+License: Free to use
+-->
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="bootstrap,bootstrap accordion,accordion with arrow">
+    <meta name="author" content="Start Templates Development">
+    <title>Bootstrap Accordion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
+    <style type="text/css">
+                                
+                    .new {
+                    padding: 0px;
+                    }
+
+                    .form-group {
+                    display: block;
+                    margin-bottom: 15px;
+                    }
+
+                    .form-group input {
+                    padding: 0;
+                    height: initial;
+                    width: initial;
+                    margin-bottom: 0;
+                    display: none;
+                    cursor: pointer;
+                    }
+
+                    .form-group label {
+                    position: relative;
+                    cursor: pointer;
+                    }
+
+                    .form-group label:before {
+                    content:'';
+                    -webkit-appearance: none;
+                    background-color: transparent;
+                    border: 2px solid #0079bf;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                    padding: 10px;
+                    display: inline-block;
+                    position: relative;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    margin-right: 5px;
+                    }
+
+                    .form-group input:checked + label:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    left: 9px;
+                    width: 6px;
+                    height: 14px;
+                    border: solid #0079bf;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                    }
+
+    </style>
+  </head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <h2 class=" text-white">Convergence 2K19</h2>
+            <span class="loader pull-right"><span class="loader-inner"></span></span>
+            <hr></br>
+            
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a class="" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Infocrates
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                           <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-4">
+                                   
+                                        <div class="new">
+                                                <form>
+                                                  <div class="form-group">
+                                                    <input type="checkbox" id="infocrates1">
+                                                    <label for="infocrates1">Web inside</label>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <input type="checkbox" id="infocrates2">
+                                                    <label for="infocrates2">Lan Arena</label>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <input type="checkbox" id="infocrates3">
+                                                    <label for="infocrates3">Poster Presentation</label>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <input type="checkbox" id="infocrates4">
+                                                    <label for="infocrates4">Hunter League</label>
+                                                  </div>
+                            
+                                                    <div class="form-group">
+                                                            <input type="checkbox" id="infocrates5">
+                                                            <label for="infocrates5"> Code Hunt</label>
+                                                    </div>
+                                                
+                                                </form>
+                                        </div>
+
+                                </div>
+                                <div class="col-lg-4">
+                                    
+                                        <div class="new">
+                                            <form>
+                                                  <div class="form-group">
+                                                    <input type="checkbox" id="infocrates6">
+                                                    <label for="infocrates6">Code Connection</label>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <input type="checkbox" id="infocrates7">
+                                                    <label for="infocrates7">Project Presentation</label>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <input type="checkbox" id="infocrates8">
+                                                    <label for="infocrates8">Paper Presentation</label>
+                                                  </div>
+                                                  <div class="form-group">
+                                                    <input type="checkbox" id="infocrates9">
+                                                    <label for="infocrates9">Google Hunt</label>
+                                                  </div>
+                                                  <div class="form-group">
+                                                        <input type="checkbox" id="infocrates10">
+                                                        <label for="infocrates10">Workshop</label>
+                                                    </div>
+                                                    
+                                                </form>
+                                        </div>
+
+                                </div>
+                                <div class="col-lg-2"></div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Mech-A-Nizer
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <p>It is a long established fact that a reader will be distracted by the readable content
+                                 of a page when looking at its layout. The point of using Lorem
+                                  Ipsum is that it has a more-or-less normal distribution of letters,
+                                   as opposed to using 'Content here, content here', making it look like readable English.
+                                   </p>
+                            <img src="image//girl.jpg" width="300">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Construct
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                                 It has roots in a piece of classical Latin literature from 45 BC, 
+                                 making it over 2000 years old. Richard McClintock, a Latin professor 
+                                 at Hampden-Sydney College in Virginia, looked up one of the more obscure 
+                                 Latin words, consectetur, from a Lorem Ipsum passage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Bio-Fusion
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>  
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            <p>There are many variations of passages of Lorem Ipsum available, 
+                                but the majority have suffered alteration in some form, by injected humour, 
+                                or randomised words which don't look even slightly believable. 
+                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+                                anything embarrassing hidden in the middle of text.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                            <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ElectroSpectro
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>  
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                            <p>There are many variations of passages of Lorem Ipsum available, 
+                                but the majority have suffered alteration in some form, by injected humour, 
+                                or randomised words which don't look even slightly believable. 
+                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+                                anything embarrassing hidden in the middle of text.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                        <h4 class="panel-title">
+                            <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                ElectaBuzz
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>  
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                        <div class="panel-body">
+                            <p>There are many variations of passages of Lorem Ipsum available, 
+                                but the majority have suffered alteration in some form, by injected humour, 
+                                or randomised words which don't look even slightly believable. 
+                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+                                anything embarrassing hidden in the middle of text.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSeven">
+                        <h4 class="panel-title">
+                            <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Tech-Marino
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>  
+                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                        <div class="panel-body">
+                            <p>There are many variations of passages of Lorem Ipsum available, 
+                                but the majority have suffered alteration in some form, by injected humour, 
+                                or randomised words which don't look even slightly believable. 
+                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+                                anything embarrassing hidden in the middle of text.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingEight">
+                        <h4 class="panel-title">
+                            <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Eureka-Maths
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>  
+                    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                        <div class="panel-body">
+                            <p>There are many variations of passages of Lorem Ipsum available, 
+                                but the majority have suffered alteration in some form, by injected humour, 
+                                or randomised words which don't look even slightly believable. 
+                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+                                anything embarrassing hidden in the middle of text.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingNine">
+                        <h4 class="panel-title">
+                            <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                General Events
+                                <span> </span>
+                            </a>
+                        </h4>
+                    </div>  
+                    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                        <div class="panel-body">
+                            <p>There are many variations of passages of Lorem Ipsum available, 
+                                but the majority have suffered alteration in some form, by injected humour, 
+                                or randomised words which don't look even slightly believable. 
+                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+                                anything embarrassing hidden in the middle of text.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+ <!--footer-->
+ <div class="footer text-center">
+    <p class="text-white">&copy; 2018 Bootstrap Accordion. All rights reserved | Design by <a href="https://starttemplates.com">Start Templates</a>
+    </p>
+</div>
+    <!--//footer-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript"  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
