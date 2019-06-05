@@ -67,6 +67,20 @@ License: Free to use
                     }
 
     </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function () {
+            $("input[name='event']").change(function () {
+                var maxAllowed = 2;
+                var cnt = $("input[name='event']:checked").length;
+                if (cnt > maxAllowed) 
+                {
+                    $(this).prop("checked", "");
+                    alert('Select maximum ' + maxAllowed + ' events!');
+                }
+            });
+            });
+    </script>
   </head>
 <body>
 <div class="container">
@@ -89,69 +103,64 @@ License: Free to use
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body">
-                           <div class="row">
-                                <div class="col-lg-2"></div>
-                                <div class="col-lg-4">
-                                   
-                                        <div class="new">
+                           
+                                <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
                                                 <form>
-                                                  <div class="form-group">
-                                                    <input type="checkbox" id="infocrates1">
-                                                    <label for="infocrates1">Web inside</label>
-                                                  </div>
-                                                  <div class="form-group">
-                                                    <input type="checkbox" id="infocrates2">
-                                                    <label for="infocrates2">Lan Arena</label>
-                                                  </div>
-                                                  <div class="form-group">
-                                                    <input type="checkbox" id="infocrates3">
-                                                    <label for="infocrates3">Poster Presentation</label>
-                                                  </div>
-                                                  <div class="form-group">
-                                                    <input type="checkbox" id="infocrates4">
-                                                    <label for="infocrates4">Hunter League</label>
-                                                  </div>
-                            
                                                     <div class="form-group">
-                                                            <input type="checkbox" id="infocrates5">
-                                                            <label for="infocrates5"> Code Hunt</label>
+                                                        <input type="checkbox" class="groupA" name="event" id="infocrates1">
+                                                        <label for="infocrates1">Web inside</label>
                                                     </div>
-                                                
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="infocrates2">
+                                                        <label for="infocrates2">Lan Arena</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event"  id="infocrates3">
+                                                        <label for="infocrates3">Poster Presentation</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="infocrates4">
+                                                        <label for="infocrates4">Hunter League</label>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="infocrates5">
+                                                        <label for="infocrates5">Code Hunt</label>
+                                                    </div>
                                                 </form>
+                                            </div>
                                         </div>
-
-                                </div>
-                                <div class="col-lg-4">
-                                    
-                                        <div class="new">
-                                            <form>
-                                                  <div class="form-group">
-                                                    <input type="checkbox" id="infocrates6">
-                                                    <label for="infocrates6">Code Connection</label>
-                                                  </div>
-                                                  <div class="form-group">
-                                                    <input type="checkbox" id="infocrates7">
-                                                    <label for="infocrates7">Project Presentation</label>
-                                                  </div>
-                                                  <div class="form-group">
-                                                    <input type="checkbox" id="infocrates8">
-                                                    <label for="infocrates8">Paper Presentation</label>
-                                                  </div>
-                                                  <div class="form-group">
-                                                    <input type="checkbox" id="infocrates9">
-                                                    <label for="infocrates9">Google Hunt</label>
-                                                  </div>
-                                                  <div class="form-group">
-                                                        <input type="checkbox" id="infocrates10">
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="event" class="groupB" id="infocrates6">
+                                                        <label for="infocrates6">Code Connection</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupB" name="event" id="infocrates7">
+                                                        <label for="infocrates7">Project Presentation</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupB" name="event" id="infocrates8">
+                                                        <label for="infocrates8">Paper Presentation</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupB" name="event" id="infocrates9">
+                                                        <label for="infocrates9">Google Hunt</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupB" name="event" id="infocrates10">
                                                         <label for="infocrates10">Workshop</label>
                                                     </div>
-                                                    
                                                 </form>
+                                            </div>
                                         </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
 
-                                </div>
-                                <div class="col-lg-2"></div>
-                           </div>
                         </div>
                     </div>
                 </div>
@@ -167,12 +176,62 @@ License: Free to use
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="panel-body">
-                            <p>It is a long established fact that a reader will be distracted by the readable content
-                                 of a page when looking at its layout. The point of using Lorem
-                                  Ipsum is that it has a more-or-less normal distribution of letters,
-                                   as opposed to using 'Content here, content here', making it look like readable English.
-                                   </p>
-                            <img src="image//girl.jpg" width="300">
+                                <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="mech1">
+                                                        <label for="mech1">Project Presentation</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="mech2">
+                                                        <label for="mech2">Paper Presentation</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event"  id="mech3">
+                                                        <label for="mech3">Poster Presentation</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="mech4">
+                                                        <label for="mech4">Workshop Powerplant</label>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="mech5">
+                                                        <label for="mech5">Workshop Automobile</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="event" class="groupB" id="mech6">
+                                                        <label for="mech6">Robo War</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupB" name="event" id="mech7">
+                                                        <label for="mech7">Tech Quiz</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupB" name="event" id="mech8">
+                                                        <label for="mech8">Robo Soccer</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupB" name="event" id="mech9">
+                                                        <label for="mech9">When Arduino Meets Matlab...!</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupB" name="event" id="mech10">
+                                                        <label for="mech10">Digital Image Processing Using Raspberry PI</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -188,11 +247,48 @@ License: Free to use
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                         <div class="panel-body">
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                 It has roots in a piece of classical Latin literature from 45 BC, 
-                                 making it over 2000 years old. Richard McClintock, a Latin professor 
-                                 at Hampden-Sydney College in Virginia, looked up one of the more obscure 
-                                 Latin words, consectetur, from a Lorem Ipsum passage.</p>
+                                <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="const1">
+                                                        <label for="const1">Paper Presentation</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="const2">
+                                                        <label for="const2">Bridge Making</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event"  id="const3">
+                                                        <label for="const3">Poster Presentation</label>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="const4">
+                                                        <label for="const4">CAD-Tech</label>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="const5">
+                                                        <label for="const5">Workshop</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="event" class="groupB" id="const6">
+                                                        <label for="const6">Card Structure</label>
+                                                    </div>
+                                                   
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -207,11 +303,48 @@ License: Free to use
                     </div>  
                     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                         <div class="panel-body">
-                            <p>There are many variations of passages of Lorem Ipsum available, 
-                                but the majority have suffered alteration in some form, by injected humour, 
-                                or randomised words which don't look even slightly believable. 
-                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
-                                anything embarrassing hidden in the middle of text.</p>
+                                <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="bio1">
+                                                        <label for="bio1">Med Quizzard</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="bio2">
+                                                        <label for="bio2">Paper Presentation</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event"  id="bio3">
+                                                        <label for="bio3">Expert Lecture</label>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="bio4">
+                                                        <label for="bio4">Postermania</label>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="bio5">
+                                                        <label for="bio5">Project Competition</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="event" class="groupB" id="bio6">
+                                                        <label for="bio6">Technoworks</label>
+                                                    </div>
+                                                   
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -227,11 +360,48 @@ License: Free to use
                     </div>  
                     <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                         <div class="panel-body">
-                            <p>There are many variations of passages of Lorem Ipsum available, 
-                                but the majority have suffered alteration in some form, by injected humour, 
-                                or randomised words which don't look even slightly believable. 
-                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
-                                anything embarrassing hidden in the middle of text.</p>
+                                <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="es1">
+                                                        <label for="es1">Projectronix</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="es2">
+                                                        <label for="es2">Poster-O-Graphics</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event"  id="es3">
+                                                        <label for="es3">Slidetalk</label>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="es4">
+                                                        <label for="es4">Workshop</label>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="es5">
+                                                        <label for="es5">Intervista Finto</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="event" class="groupB" id="es6">
+                                                        <label for="es6">Especialista conversa</label>
+                                                    </div>
+                                                   
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -247,11 +417,42 @@ License: Free to use
                     </div>  
                     <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                         <div class="panel-body">
-                            <p>There are many variations of passages of Lorem Ipsum available, 
-                                but the majority have suffered alteration in some form, by injected humour, 
-                                or randomised words which don't look even slightly believable. 
-                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
-                                anything embarrassing hidden in the middle of text.</p>
+                                <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="eb1">
+                                                        <label for="eb1">Projectron</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="eb2">
+                                                        <label for="eb2">Think Beyond</label>
+                                                    </div>
+                                                   
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                     <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event"  id="eb3">
+                                                        <label for="eb3">Guesstimate</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="eb4">
+                                                        <label for="eb4">Workshop</label>
+                                                    </div>
+                                                    
+                                                   
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -267,11 +468,48 @@ License: Free to use
                     </div>  
                     <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
                         <div class="panel-body">
-                            <p>There are many variations of passages of Lorem Ipsum available, 
-                                but the majority have suffered alteration in some form, by injected humour, 
-                                or randomised words which don't look even slightly believable. 
-                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
-                                anything embarrassing hidden in the middle of text.</p>
+                                <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="marin1">
+                                                        <label for="marin1">BUILD MANIA</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="marin2">
+                                                        <label for="marin2">PLACARD PRESENTATION</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event"  id="marin3">
+                                                        <label for="marin3">INNOVATIVE MINDS (Paper Presentation)</label>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="marin4">
+                                                        <label for="marin4">TECH MAZE</label>
+                                                    </div>
+                                                     <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="marin5">
+                                                        <label for="marin5">BOAT MAKING WORKSHOP</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" name="event" class="groupB" id="marin6">
+                                                        <label for="marin6">BOAT RACE</label>
+                                                    </div>
+                                                   
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -287,11 +525,35 @@ License: Free to use
                     </div>  
                     <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
                         <div class="panel-body">
-                            <p>There are many variations of passages of Lorem Ipsum available, 
-                                but the majority have suffered alteration in some form, by injected humour, 
-                                or randomised words which don't look even slightly believable. 
-                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
-                                anything embarrassing hidden in the middle of text.</p>
+                                <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="em1">
+                                                        <label for="em1">Math Quiz</label>
+                                                    </div>
+                                                    
+                                                   
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="em2">
+                                                        <label for="em2">Math Model</label>
+                                                    </div>
+                                                   
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -307,11 +569,42 @@ License: Free to use
                     </div>  
                     <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
                         <div class="panel-body">
-                            <p>There are many variations of passages of Lorem Ipsum available, 
-                                but the majority have suffered alteration in some form, by injected humour, 
-                                or randomised words which don't look even slightly believable. 
-                                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
-                                anything embarrassing hidden in the middle of text.</p>
+                                <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="ge1">
+                                                        <label for="ge1">Food Fiesta</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="ge2">
+                                                        <label for="ge2">Youth Parliament</label>
+                                                    </div>
+                                                   
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="new">
+                                                <form>
+                                                     <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event"  id="ge3">
+                                                        <label for="ge3">Photo Phactory</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="groupA" name="event" id="ge4">
+                                                        <label for="ge4">Tech Ranga</label>
+                                                    </div>
+                                                    
+                                                   
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -326,7 +619,7 @@ License: Free to use
     </p>
 </div>
     <!--//footer-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
   <script type="text/javascript"  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
