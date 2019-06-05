@@ -67,6 +67,7 @@ License: Free to use
                     }
 
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript">
        $(document).ready(function () {
@@ -76,13 +77,20 @@ License: Free to use
                 if (cnt > maxAllowed) 
                 {
                     $(this).prop("checked", "");
-                    alert('Select maximum ' + maxAllowed + ' events!');
+                    swal("Oopsss...", "you can select maximum " + maxAllowed + " events!", "warning");
+                    
                 }
             });
             });
     </script>
   </head>
 <body>
+
+
+    
+    
+ 
+
 <div class="container">
     <div class="row">
         <div class="col-md-offset-1 col-md-10">
